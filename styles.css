@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.sidebar {
+    grid-row: 1 / 3;
+    background-color: #057dcd;
+    color: white;
+    padding: 25px;
+}
+
+.logo {
+    padding: 15px 0px;
+}
+
+.sidebar li {
+    list-style-type: none;
+}
+
+.sidebar ul {
+    padding: 15px 0px;
+}
+
+.header {
+    background-color: white;
+    padding: 25px;
+}
+
+.top-header {
+
+}
+
+.bottom-header {
+
+}
+
+.main-content {
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    padding: 25px;
+}
+
+.project-cards {
+    grid-row: 1 / 3;
+}
+
+.project-card {
+    background-color: white;
+}
+
+.announcement-card {
+    background-color: white;
+}
+
+.trending-card {
+    background-color: white;
+}

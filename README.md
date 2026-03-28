@@ -1,5 +1,5 @@
 # Admin Dashboard
-The webpage is based on a design provided from The Odin Project using the following image as a reference:
+This [admin dashboard webpage](https://dianedoan.github.io/odin-admin-dashboard/) is based on a design provided from The Odin Project using the following image as a reference:
 
 ![admin dashboard screenshot](./images/dashboard-project.png)
 

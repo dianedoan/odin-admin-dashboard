@@ -6,18 +6,25 @@
   font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background-color: #e5e7eb;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 5fr;
+    height: 100vh;
+    width: 100vw;
 }
 
 .sidebar {
     grid-row: 1 / 3;
     background-color: #057dcd;
-    padding: 10px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 50px;
+    font-weight: bold;
 }
 
 .nav-link {
@@ -25,6 +32,9 @@
     align-items: center;
     gap: 10px;
     text-decoration: none;
+}
+
+.sidebar .nav-link {
     color: white;
 }
 
@@ -38,8 +48,9 @@
 
 .nav-menu, .branding-menu  {
     display: grid;
-    gap: 10px;
-    padding: 15px;
+    gap: 18px;
+    padding: 10px;
+    font-size: 1.2rem;
 }
 
 .nav-menu .nav-link, .branding-menu .nav-link {
@@ -52,17 +63,96 @@
 
 .header {
     background-color: white;
-    padding: 25px;
+    padding: 5px 50px;
     display: grid;
-    grid-template: 1fr 1fr / 2fr 1fr;
+    grid-template: 0.6fr 0.9fr / 2fr 1fr;
+    box-shadow: 0px 3px 5px #a5a5a5;
 }
 
 .header svg {
-    width: 24px;
+    width: 32px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search input[type=search] {
+    border: none;
+    background-color: #e5e7eb;
+    border-radius: 20px;
+    width: 90%;
+    height: 5px;
+    padding: 20px;
+}
+
+.small-profile {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 30px;
+    padding-left: 20px;
+}
+
+.small-profile .profile-icon {
+    width: 52px;
+}
+
+.small-profile .full-name {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.user-profile {
+    display: flex;
+    gap: 15px;
+}
+
+.user-profile .profile-icon {
+    width: 92px;
+}
+
+.user-profile .profile-msg {
+    display: grid;
+    align-self: center;
+    gap: 5px;
+    font-weight: bold;
+}
+
+.greeting {
+    font-size: 1rem;
+}
+
+.profile-username {
+    font-size: 1.6rem;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: end;
+    align-self: center;
+    gap: 30px;
+}
+
+.header-buttons button {
+    border: none;
+    border-radius: 30px;
+    padding: 10px 0px;
+    background-color: #057dcd;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100px;
+    cursor: pointer;
+}
+
+.header .nav-link {
+    color: black;
 }
 
 .main-content {
-    background-color: lightgray;
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
